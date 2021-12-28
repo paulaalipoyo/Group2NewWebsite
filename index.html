@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Zach Eat Seafood Restaurant - Group 2 Resto Website</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-66QMMGN72E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-66QMMGN72E');
+</script>
+
+<script>
+	
+	function validate(){
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    
+    var text;
+    if(name.length < 4){
+      alert("Please Enter valid Name");
+      return false;
+    }
+    if(isNaN(phone) || phone.length < 8 || phone.length > 12){
+	  alert("Please Enter valid Phone Number");
+      return false;
+    }
+    if(email.indexOf("@") == -1 || email.length < 6){
+	 alert("Please Enter valid Email");
+      return false;
+    }
+    if(message.length <= 30){
+	  alert("Please Enter More Than 30 Characters");
+      return false;
+    }else{
+	  alert("Form Submitted Successfuly");
+	  var frm = document.getElementsByName('contactForm')[0];
+		frm.submit(); 
+		frm.reset(); 
+      return false;
+    }
+  }
+</script>
+
+
+</head>
+
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/zach.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start slides -->
+	<div id="slides" class="cover-slides">
+		<ul class="slides-container">
+			<li class="text-center">
+				<img src="images/slide1.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Welcome To <br> Zach Eat Seafood Restaurant</strong></h1>
+							<p class="m-b-40">Zach Eat offers a variety of meals made with fresh seafood directly from the tank, with special highlights on the seafoods.</p>
+				
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/slide2.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Welcome To <br> Zach Eat Seafood Restaurant</strong></h1>
+							<p class="m-b-40">Zach Eat offers a variety of meals made with fresh seafood directly from the tank, with special highlights on the seafoods..</p>
+							
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="text-center">
+				<img src="images/slide3.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="m-b-20"><strong>Welcome To <br>Zach Eat Seafood Restaurant</strong></h1>
+							<p class="m-b-40">Zach Eat offers a variety of meals made with fresh seafood directly from the tank, with special highlights on the seafoods.</p>
+							
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="slides-navigation">
+			<a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			<a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	<!-- End slides -->
+	
+	<!-- Start About -->
+	<div class="about-section-box" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="images/aboutus.jpg" alt="" class="img-fluid">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+					<div class="inner-column">
+						<h1>Welcome To <span>Zach Eat Seafood Restaurant</span></h1>
+						<h4>Little Story</h4>
+						<p>Chef Zachry Enzo founded the Zach eat Seafood restaurant. He enjoys seafood and has a distinctive dish that is well-liked by all. </p>
+						<p>In Sulu waters, the red-orange crab is also known as "spanner crab." The unique sweet-spicy-creamy sauce made of coconut milk and a combination of spices at Zach Eat Seafood Restaurant celebrates the sea's bounty!</p>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About -->
+	
+	<!-- Start QT -->
+	<div class="qt-box qt-background">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 ml-auto mr-auto text-left">
+					<p class="lead ">
+						" Determination, dedication and hard work are the ingredients for a successful food business and knowing that the closest to a man's heart is his stomach "
+					</p>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End QT -->
+	
+	<!-- Start Menu -->
+	<div class="menu-box" id="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Special Menu</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="special-menu text-center">
+						<div class="button-group filter-button-group">
+							<button class="active" data-filter="*">All</button>
+							<button data-filter=".drinks">Drinks</button>
+							<button data-filter=".lunch">Crabs</button>
+							<button data-filter=".dinner">Other Seafood</button>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div class="row special-list">
+				<div class="col-lg-4 col-md-6 special-grid drinks">
+					<div class="gallery-single fix">
+						<img src="images/drink1.jpg" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Special Drinks 1</h4>
+							<p>Blue Sprite Cocktail</p>
+							<h5> ₱200.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid drinks">
+					<div class="gallery-single fix">
+						<img src="images/drink2.jpg" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Special Drinks 2</h4>
+							<p>Watermelon Sugar High Cocktail</p>
+							<h5> ₱250.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid drinks">
+					<div class="gallery-single fix">
+						<img src="images/drink3.jpg" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Special Drinks 3</h4>
+							<p>Fruits Shake</p>
+							<h5> ₱150.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid lunch">
+					<div class="gallery-single fix">
+						<img src="images/spannercrab.PNG" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Spanner Crab Solo</h4>
+							<h5> ₱250.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid lunch">
+					<div class="gallery-single fix">
+						<img src="images/crabs2.PNG" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Crab with side dish</h4>
+							<h5>₱275.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid lunch">
+					<div class="gallery-single fix">
+						<img src="images/crabs3.jpg" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Crab in the bag</h4>
+							<h5> ₱375.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="images/friedshrimp.PNG" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Other Seafood 1</h4>
+							<p>Fried Shrimp</p>
+							<h5> ₱150.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="images/Lobster.jpg" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Other Seafood 2</h4>
+							<p>Lobster</p>
+							<h5> ₱400.00</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 special-grid dinner">
+					<div class="gallery-single fix">
+						<img src="images/Seafood Platter.jpg" class="img-fluid" alt="Image">
+						<div class="why-text">
+							<h4>Other Seafood 3</h4>
+							<p>Seafood Platter</p>
+							<h5> ₱450.00</h5>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- End Menu -->
+
+	<!-- Start Contact -->
+	<div class="contact-box" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Contact</h2>
+						<p>Please provide the important details below. Thank you</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<form id="contactForm" name="contactForm" onsubmit="return validate()" method="post" >
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+									<div class="help-block with-errors"></div>
+								</div>                                 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+									<div class="help-block with-errors"></div>
+								</div> 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" placeholder="Your Phone Number" id="phone" class="form-control" name="number" required data-error="Please enter your Phone number">
+									<div class="help-block with-errors"></div>
+								</div> 
+								</div> 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group"> 
+									<textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="submit-button text-center">
+									<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+									<div id="msgSubmit" class="h3 text-center hidden"></div> 
+									<div class="clearfix"></div> 
+								</div>
+							</div>
+						</div>            
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p> A Seafood Restaurant that offers a quality variety of seafood with the signature dish of chef Zach the red-orange crab is also known as "spanner crab." The unique sweet-spicy-creamy sauce made of coconut milk and a combination of spices at Zach Eat Seafood Restaurant celebrates the sea's bounty!</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Opening hours</h3>
+					<p><span class="text-color">Monday: </span>Closed</p>
+					<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Sat-Sun :</span> 4:PM - 10PM</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact information</h3>
+					<p class="lead">Casaloda street, Juna Subdivision Matina Davao City, 8000</p>
+					<p class="lead"><a href="#">09123456789</a></p>
+					<p><a href="#"> zacheat@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribe</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">This Website does not promote or encourage any illegal activities, all contents provided by this website is meant for Educational Purposes only.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="js/contact.js"></script>
+	  <!-- Scripts -->
+	  <script src="assets/js/animation.js"></script>
+</body>
+</html>
